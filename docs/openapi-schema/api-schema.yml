@@ -1,0 +1,40 @@
+openapi: 3.0.1
+info:
+  title: APIs for AI Health
+  description: APIs for AI Health
+  version: '0.5'
+servers:
+  - url: http://localhost:8000
+    description: Development Server
+  - url: http://localhost:8000
+    description: Production Server
+paths:
+  /api/sample-api:
+    get:
+      description: sample api
+      responses:
+        '201':
+          description: sample api
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  request_id:
+                    type: string
+              examples:
+                '0':
+                  value: '{"sample response":"f8238c27-63a2-4cf0-bdec-39f643c88b30"}'
+      servers:
+        - url: http://localhost:8000
+      tags:
+        - SampleTag
+    servers:
+      - url: http://localhost:8000
+
+tags:
+  - name: SampleTag
+    description: You can add more tags like this
+  - name: SampleTag2
+    description: You can add more tags like this
+
