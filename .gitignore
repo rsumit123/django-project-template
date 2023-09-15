@@ -29,6 +29,9 @@ Temporary Items
 __pycache__/
 *.py[cod]
 
+venv/
+
+
 # C extensions
 *.so
 
@@ -49,7 +52,6 @@ var/
 .installed.cfg
 *.egg
 
-venv/
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
